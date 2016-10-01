@@ -1,6 +1,5 @@
 'use strict';
 
-const http = require('http');
 const uwp = require('uwp');
 const dotstar = require('dotstar');
 
@@ -30,17 +29,13 @@ function init(stripLength, cb) {
 }
 
 init(8, (strip) => {
-    strip.all(0, 0, 0, 0);
+    strip.set(0, 255, 0, 0, 0.2);
+    strip.set(1, 0, 255, 0, 0.2);
+    strip.set(2, 0, 0, 255, 0.2);
+    strip.set(3, 255, 255, 0, 0.2);
+    strip.set(4, 255, 0, 255, 0.2);
+    strip.set(5, 0, 255, 255, 0.2);
+    strip.set(6, 255, 255, 255, 0.2);
+    strip.set(7, 255, 0, 0, 0.2);
     strip.sync();
-    setTimeout(() => {
-        strip.set(0, 255, 0, 0, 0.2);
-        strip.set(1, 0, 255, 0, 0.2);
-        strip.set(2, 0, 0, 255, 0.2);
-        strip.set(3, 255, 255, 0, 0.2);
-        strip.set(4, 255, 0, 255, 0.2);
-        strip.set(5, 0, 255, 255, 0.2);
-        strip.set(6, 255, 255, 255, 0.2);
-        strip.set(7, 255, 0, 0, 0.2);
-        strip.sync();
-    }, 2000);
 });
