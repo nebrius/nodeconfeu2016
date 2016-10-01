@@ -1,0 +1,15 @@
+{
+  "name": "nodeconfeu2016",
+  "version": "1.0.0",
+  "description": "Starter template for NodeConf EU 2016 IoT workshop",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "uwp": "^1.0.2",
+    "dotstar": "^1.0.0"
+  },
+  "author": "Bryan Hughes <bryan@nebri.us>",
+  "license": "MIT"
+}
