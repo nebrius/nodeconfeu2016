@@ -2,13 +2,13 @@
 
 ## Getting Started
 
-**Prerequisites:**
+### Prerequisites:
 
 - Install [Node.js](https://nodejs.org/)
 - Install [Visual Studio Code](https://code.visualstudio.com/)
 - Install the [Windows IoT Core Extension](https://marketplace.visualstudio.com/items?itemName=ms-iot.windowsiot) for Visual Studio Code
 
-**Setting Up the Project:**
+### Setting Up the Project:
 
 Start by cloning the project and installing dependencies
 
@@ -28,7 +28,7 @@ Finally, configure the device settings:
 - Enter the username `Administrator` and hit `Enter`
 - Enter the password `raspberry` and hit `Enter`
 
-**Connecting the Hardware:**
+### Connecting the Hardware:
 
 Connect the hardware as shown in the circuit schematic below:
 
@@ -37,7 +37,7 @@ Connect the hardware as shown in the circuit schematic below:
 Be careful to make sure you connect the correct wires to the correct pins on the Raspberry Pi. Failure to connect the wires correctly could damage the hardware! The pins should be connected this way:
 
 | DotStar | Raspberry Pi |
---------------------------
+|---------|--------------|
 | VCC     | 2 (5V)       |
 | GND     | 6 (GND)      |
 | DI      | 19 (MOSI0)   |
@@ -45,7 +45,7 @@ Be careful to make sure you connect the correct wires to the correct pins on the
 
 A complete pinout of the Raspberry Pi can be found [here](https://github.com/nebrius/raspi-io/wiki/Pin-Information).
 
-**Programming the Raspberry Pi:**
+### Programming the Raspberry Pi:
 
 To run your program, hit F1, enter `iot: Run Remote Script`, and hit `Enter` and Visual Studio Code will upload your program to the Raspberry Pi and run it on the device automatically.
 
@@ -68,7 +68,7 @@ To control the scoreboard, have the Raspberry Pi host a webpage where you can cl
 **Stretch goals**
 
 - Implement a game, such as tic-tac-toe, inside the browser that automatically controls the scoreboard
-- Have the lights flash and change colors when a player wins, like on a slot machine. Get creative!
+- Have the lights flash and change colors when a player wins, like on a slot machine
 
 ### Animation Control
 
